@@ -1,0 +1,125 @@
+:root {
+  --gradient-left: linear-gradient(
+    90deg,
+    #1C0A44 0%,
+    #5E1E36 50%,
+    #C84700 75%,
+    #FF7C00 100%
+  );
+
+  --gradient-right: linear-gradient(
+    90deg,
+    #2A0F47 0%,
+    #2D5CA9 50%,
+    #88A6C9 75%,
+    #CBD7E5 100%
+  );
+}
+
+.how-it-works {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeInSlide 1s ease forwards;
+}
+
+.how-it-works h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.how-it-works p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.how-it-works .highlight {
+  color: #007BFF;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.step-card {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(50px);
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:nth-child(1) { animation-delay: 0.6s; }
+.step-card:nth-child(2) { animation-delay: 0.8s; }
+.step-card:nth-child(3) { animation-delay: 1s; }
+.step-card:nth-child(4) { animation-delay: 1.2s; }
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.step-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.step-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .step-card {
+    text-align: center;
+  }
+
+  .step-card ul {
+    padding-left: 0;
+  }
+}

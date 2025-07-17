@@ -1,0 +1,91 @@
+.privacy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.privacy-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.privacy-title .highlight {
+  color: #FF6600; /* Orange highlight for "PRIVACY FIRST" */
+}
+
+.privacy-subtitle {
+  color: #555;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.privacy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+.privacy-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+.icon {
+  background: #FF6600;
+  color: #fff;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.privacy-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

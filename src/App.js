@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import Heropage from "./components/Heropage";
+import HowItWorksSection from "./components/HowItWorksSection";
+import DriveMailOverview from "./components/DriveMailOverview";
+import WhyChooseDriveMail from "./components/WhyChooseDriveMail";
+import ExperienceSection from "./components/ExperienceSection";
+import PrivacyFirst from "./components/PrivacyFirst";
+import Waitlist from "./components/Waitlist";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Heropage />
+      <HowItWorksSection />
+      <DriveMailOverview />
+      <WhyChooseDriveMail />
+      <ExperienceSection />
+      <PrivacyFirst />
+      <Waitlist />
+    </>
   );
 }
 
