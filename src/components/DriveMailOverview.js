@@ -38,7 +38,7 @@ export default function DriveMailOverview() {
       </div>
       <div className="image-content">
         <video 
-          src="/video.mp4" 
+          src="https://youtu.be/VJxppgsHjF8?si=FP4XDhjILwqxZozT" 
           autoPlay 
           muted 
           loop 
