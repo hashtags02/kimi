@@ -17,7 +17,7 @@ export default function ExperienceSection() {
       <div className="image-card">
         <img src="/images.webp" alt="Productive driving with DriveMail" />
         <div className="image-caption">
-          🚗 Built for commuters. Powered by AI.
+          Built for commuters. Powered by AI.
         </div>
       </div>
 

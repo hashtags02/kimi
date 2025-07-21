@@ -126,3 +126,83 @@
     transform: translateY(0);
   }
 }
+
+/* Responsive - Tablet */
+@media (max-width: 768px) {
+  .waitlist-heading .title {
+    font-size: 32px;
+  }
+
+  .waitlist-heading .subtitle {
+    font-size: 16px;
+  }
+
+  .gradient-header {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .gradient-header h2 {
+    font-size: 24px;
+  }
+
+  .form-content {
+    padding: 20px;
+  }
+
+  .form-content form {
+    gap: 12px;
+  }
+
+  .form-content input,
+  .form-content button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+  .waitlist-wrapper {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .waitlist-heading {
+    text-align: center;
+  }
+
+  .gradient-header {
+    text-align: center;
+  }
+
+  .form-content {
+    text-align: center;
+  }
+
+  .form-content form {
+    align-items: center;
+  }
+
+  .form-content input,
+  .form-content button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .waitlist-heading .title {
+    font-size: 26px;
+  }
+
+  .waitlist-heading .subtitle {
+    font-size: 15px;
+  }
+
+  .gradient-header h2 {
+    font-size: 22px;
+  }
+
+  .queue-info {
+    font-size: 14px;
+  }
+}

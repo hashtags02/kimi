@@ -18,7 +18,7 @@
 }
 
 .privacy-title .highlight {
-  color: #FF6600; /* Orange highlight for "PRIVACY FIRST" */
+  color: #FF6600;
 }
 
 .privacy-subtitle {
@@ -50,6 +50,10 @@
   opacity: 0;
   animation: fadeSlideUp 0.8s ease-out forwards;
   animation-delay: 0.9s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .icon {
@@ -58,7 +62,7 @@
   font-size: 24px;
   width: 50px;
   height: 50px;
-  margin: 0 auto 15px;
+  margin-bottom: 15px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -87,5 +91,73 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive - Tablet */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .privacy-title {
+    font-size: 24px;
+  }
+
+  .privacy-subtitle {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .privacy-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .privacy-card {
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    font-size: 22px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+  .privacy-container {
+    padding: 30px 10px;
+  }
+
+  .privacy-title {
+    font-size: 20px;
+  }
+
+  .privacy-subtitle {
+    font-size: 14px;
+  }
+
+  .privacy-card {
+    padding: 16px;
+  }
+
+  .privacy-card h3 {
+    font-size: 14px;
+  }
+
+  .privacy-card p {
+    font-size: 12.5px;
+  }
+
+  .icon {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
   }
 }

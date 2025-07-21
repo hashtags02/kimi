@@ -26,7 +26,7 @@ const Heropage = () => {
       }}
     >
       <nav className="navbar">
-        <div className="logo">Kimi</div>
+        <div className="logo">NEEJA</div>
         <ul className="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#demo-section">About</a></li>         {/* ✅ Scrolls to DriveMailOverview */}
