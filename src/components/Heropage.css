@@ -29,13 +29,14 @@ body {
   font-weight: 800;
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 26px;
+  padding-left: 20px;
   color: #000;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 50px;
   margin: 0;
 }
 
@@ -64,6 +65,7 @@ body {
 /* ANIMATED TEXT BLOCKS */
 .hero-text {
   max-width: 50%;
+  padding-left: 20px;
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
   animation-delay: 0.3s;
