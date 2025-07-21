@@ -6,7 +6,6 @@
     #C84700 75%,
     #FF7C00 100%
   );
-
   --gradient-right: linear-gradient(
     90deg,
     #2A0F47 0%,
@@ -14,6 +13,17 @@
     #88A6C9 75%,
     #CBD7E5 100%
   );
+}
+
+/* universal fix for spacing issues */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .how-it-works {
@@ -48,7 +58,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  justify-items: center; /* Center cards in grid on smaller screens */
+  justify-items: center;
 }
 
 .step-card {
@@ -63,8 +73,8 @@
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 350px;
   width: 100%;
+  max-width: 350px;
 }
 
 .step-card:nth-child(1) { animation-delay: 0.6s; }
@@ -116,64 +126,21 @@
   }
 }
 
-/* Responsive - Tablet */
+/* Responsive */
 @media (max-width: 768px) {
-  .how-it-works h2 {
-    font-size: 2.2rem;
-  }
-
-  .how-it-works p {
-    font-size: 1.1rem;
-  }
-
   .steps-grid {
-    gap: 1rem;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .step-card {
+    width: 90%;
+    max-width: 350px;
     text-align: center;
-    padding: 1.5rem 1rem;
-    align-items: center;
   }
 
   .step-card ul {
     padding-left: 0;
-  }
-
-  .step-card h3 {
-    font-size: 1.3rem;
-  }
-
-  .step-card li {
-    font-size: 0.9rem;
-  }
-}
-
-/* Responsive - Mobile */
-@media (max-width: 480px) {
-  .how-it-works {
-    padding: 3rem 1rem;
-  }
-
-  .how-it-works h2 {
-    font-size: 1.8rem;
-  }
-
-  .how-it-works p {
-    font-size: 1rem;
-  }
-
-  .step-card {
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .step-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .step-card li {
-    font-size: 0.85rem;
   }
 }

@@ -15,12 +15,12 @@ const privacyFeatures = [
   {
     icon: "🚫",
     title: "Zero Sharing, Ever",
-    description: "No selling, no sharing. Your data fuels your productivity—not someone else’s profits."
+    description: "No selling, no sharing. Your data fuels your productivity not someone else’s profits."
   },
   {
     icon: "✅",
     title: "Audited for Assurance",
-    description: "Verified by independent security experts, so you can focus on the road—not your privacy."
+    description: "Verified by independent security experts, so you can focus on the road not your privacy."
   },
   {
     icon: "🌐",
@@ -42,7 +42,7 @@ const PrivacyFirst = () => {
         Privacy That Drives With You
       </h2>
       <p className="privacy-subtitle">
-        Your words stay yours—always. Our voice-powered assistant operates with unwavering respect for your privacy.
+        Your words stay yours always. Our voice-powered assistant operates with unwavering respect for your privacy.
       </p>
       <div className="privacy-grid">
         {privacyFeatures.map((feature, index) => (

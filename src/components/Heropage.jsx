@@ -26,11 +26,13 @@ const Heropage = () => {
       }}
     >
       <nav className="navbar">
-        <div className="logo">NEEJA</div>
+        <div className="logo">
+          <span className="highlight">NEEJA</span>
+        </div>
         <ul className="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#demo-section">About</a></li>         {/* ✅ Scrolls to DriveMailOverview */}
-          <li><a href="#waitlist-section">Contact</a></li>   {/* ✅ Scrolls to Waitlist */}
+          <li><a href="#demo-section">About</a></li>
+          <li><a href="#waitlist-section">Contact</a></li>
         </ul>
       </nav>
 
@@ -40,9 +42,9 @@ const Heropage = () => {
             Talk through your inbox <br /> Let voice-to-voice AI handle your emails
           </h1>
           <p className="description">
-            Hands-free voice assistant that reads, drafts, and sends emails while you drive safely. <br />
+            Hands-free voice assistant that reads, drafts, and sends emails while you drive safely. 
             Transform 30 minutes of driving into inbox productivity.
-            100% Hands-Free <br /> Works Offline Voice-Only Interface
+          
           </p>
 
           <div className="hero-buttons">

@@ -28,23 +28,24 @@ export default function DriveMailOverview() {
         </h2>
         <p>
           Turn your commute into productive time. <br />
-          <span className="orange">Activate</span> with a simple voice command: “
-          <span className="orange">Hey DriveMail</span>.”<br />
-          Reads, writes, and sends emails — <span className="orange">hands-free</span>.<br />
-          Works even with <span className="blue">low or no internet</span>.<br />
-          Seamlessly connects to your inbox as you drive.<br />
+          <span className="orange">Activate</span> with a simple voice command: "
+          <span className="orange">Hey DriveMail</span>." <br />
+          Reads, writes, and sends emails <span className="orange">hands-free</span>. <br />
+          Seamlessly connects to your inbox as you drive. <br />
           <span className="orange">Stay focused</span> on the road while DriveMail handles the rest.
         </p>
       </div>
       <div className="image-content">
-        <video 
-          src="https://youtu.be/VJxppgsHjF8?si=FP4XDhjILwqxZozT" 
-          autoPlay 
-          muted 
-          loop 
-          playsInline 
-          className="drive-video" //video here
-        />
+        <iframe
+          className="drive-video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/vx-yn2NDJ7c?autoplay=1&mute=1&loop=1&playlist=vx-yn2NDJ7c"
+          title="DriveMail Demo"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        ></iframe>
       </div>
     </section>
   );
