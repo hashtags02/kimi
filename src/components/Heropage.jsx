@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Heropage.css";
 
 const Heropage = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const handleJoinWaitlist = () => {
     const waitlistSection = document.getElementById("waitlist-section");
     if (waitlistSection) {
@@ -14,6 +16,14 @@ const Heropage = () => {
     if (demoSection) {
       demoSection.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -29,10 +39,19 @@ const Heropage = () => {
         <div className="logo">
           <span className="highlight">NEEJA</span>
         </div>
-        <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#demo-section">About</a></li>
-          <li><a href="#waitlist-section">Contact</a></li>
+
+        {/* Hamburger Icon */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+
+        {/* Navigation Links */}
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <li><a href="#" onClick={closeMenu}>Home</a></li>
+          <li><a href="#demo-section" onClick={closeMenu}>About</a></li>
+          <li><a href="#waitlist-section" onClick={closeMenu}>Contact</a></li>
         </ul>
       </nav>
 
@@ -44,7 +63,6 @@ const Heropage = () => {
           <p className="description">
             Hands-free voice assistant that reads, drafts, and sends emails while you drive safely. 
             Transform 30 minutes of driving into inbox productivity.
-          
           </p>
 
           <div className="hero-buttons">

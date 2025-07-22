@@ -21,7 +21,7 @@ body {
   align-items: center;
   padding: 30px 50px;
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 
 .logo {
@@ -40,11 +40,13 @@ body {
   font-weight: 800;
 }
 
+/* NAV LINKS */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 40px;
   margin: 0;
+  transition: all 0.3s ease;
 }
 
 .nav-links li a {
@@ -104,7 +106,7 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: flex-start; /* left on desktop */
+  justify-content: flex-start;
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
   animation-delay: 0.7s;
@@ -155,7 +157,7 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* FADE IN ANIMATION */
+/* ANIMATION */
 @keyframes fadeInUp {
   0% {
     transform: translateY(40px);
@@ -165,6 +167,22 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* MENU ICON */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
 /* RESPONSIVE TABLET */
@@ -187,40 +205,38 @@ body {
 
 /* RESPONSIVE MOBILE */
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .logo {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
+  .menu-icon {
+    display: flex;
   }
 
   .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 30px;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 0;
-    margin: 0;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 
   .nav-links li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links li a {
-    display: inline-block;
-    width: 100%;
+    margin: 10px 0;
   }
 
   .hero-buttons {
-    justify-content: center; /* center buttons on mobile */
+    justify-content: center;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
   }
 }

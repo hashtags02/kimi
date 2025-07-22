@@ -160,6 +160,17 @@
     padding: 12px;
   }
 }
+/* Gradient Border Wrapper */
+.border-gradient {
+  padding: 3px;
+  background: linear-gradient(90deg, #FF7C00, #5E5E5E);
+  border-radius: 18px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 550px;
+  box-sizing: border-box;
+}
+
 
 /* Responsive - Mobile */
 @media (max-width: 480px) {

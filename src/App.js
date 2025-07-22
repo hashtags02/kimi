@@ -8,6 +8,7 @@ import WhyChooseDriveMail from "./components/WhyChooseDriveMail";
 import ExperienceSection from "./components/ExperienceSection";
 import PrivacyFirst from "./components/PrivacyFirst";
 import Waitlist from "./components/Waitlist";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ExperienceSection />
       <PrivacyFirst />
       <Waitlist />
+      <Footer />
     </>
   );
 }

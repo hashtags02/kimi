@@ -38,7 +38,7 @@ const PrivacyFirst = () => {
   return (
     <section className="privacy-container">
       <h2 className="privacy-title">
-        <span className="highlight">PRIVACY FIRST</span><br />
+       
         Privacy That Drives With You
       </h2>
       <p className="privacy-subtitle">
