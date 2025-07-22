@@ -1,16 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./DriveMailOverview.css";
 
 export default function DriveMailOverview() {
+  const sectionRef = useRef(null);
+  const [playVideo, setPlayVideo] = useState(false);
+
   useEffect(() => {
-    const section = document.querySelector(".drive-overview");
+    const section = sectionRef.current;
 
     const handleScroll = () => {
       const sectionTop = section.getBoundingClientRect().top;
+      const sectionBottom = section.getBoundingClientRect().bottom;
       const triggerPoint = window.innerHeight * 0.8;
 
-      if (sectionTop < triggerPoint) {
+      if (sectionTop < triggerPoint && sectionBottom > 0) {
         section.classList.add("animate");
+        setPlayVideo(true);
+      } else {
+        section.classList.remove("animate");
+        setPlayVideo(false);
       }
     };
 
@@ -21,7 +29,7 @@ export default function DriveMailOverview() {
   }, []);
 
   return (
-    <section id="demo-section" className="drive-overview">
+    <section id="demo-section" ref={sectionRef} className="drive-overview">
       <div className="text-content">
         <h2>
           Stay Connected, <span>Hands-Free</span>
@@ -40,7 +48,11 @@ export default function DriveMailOverview() {
           className="drive-video"
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/vx-yn2NDJ7c?autoplay=1&mute=1&loop=1&playlist=vx-yn2NDJ7c"
+          src={
+            playVideo
+              ? "https://www.youtube.com/embed/vx-yn2NDJ7c?autoplay=1&mute=1&loop=1&playlist=vx-yn2NDJ7c"
+              : ""
+          }
           title="DriveMail Demo"
           frameBorder="0"
           allow="autoplay; encrypted-media"
