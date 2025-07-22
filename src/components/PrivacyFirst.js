@@ -5,7 +5,7 @@ const privacyFeatures = [
   {
     icon: "🙂",
     title: "No Voice Data Storage",
-    description: "We never save what you say. Your commands are processed instantly and securely—no recordings, no history."
+    description: "We never save what you say. Your commands are processed instantly and securely no recordings, no history."
   },
   {
     icon: "🔒",
@@ -42,7 +42,7 @@ const PrivacyFirst = () => {
         Privacy That Drives With You
       </h2>
       <p className="privacy-subtitle">
-        Your words stay yours always. Our voice-powered assistant operates with unwavering respect for your privacy.
+        Your words stay yours always. Our voice powered assistant operates with unwavering respect for your privacy.
       </p>
       <div className="privacy-grid">
         {privacyFeatures.map((feature, index) => (
