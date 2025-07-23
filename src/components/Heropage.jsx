@@ -58,7 +58,7 @@ const Heropage = () => {
       <div className="hero">
         <div className="hero-text">
           <h1>
-            Talk through your inbox <br /> Let voice-to-voice AI handle your emails
+           Your commute, now productive with AI
           </h1>
           <p className="description">
             Hands-free voice assistant that reads, drafts, and sends emails while you drive safely. 

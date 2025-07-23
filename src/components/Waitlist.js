@@ -58,14 +58,7 @@ export default function Waitlist() {
 
         <div className="form-content">
           <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Full name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
+           
             <input
               type="email"
               name="email"
@@ -74,15 +67,9 @@ export default function Waitlist() {
               onChange={handleChange}
               required
             />
-            <input
-              type="text"
-              name="company"
-              placeholder="Company (optional)"
-              value={formData.company}
-              onChange={handleChange}
-            />
+            
             <button type="submit" disabled={loading}>
-              {loading ? "Joining..." : "Request access"}
+              {loading ? "Joining..." : "Join Waitlist"}
             </button>
           </form>
 
