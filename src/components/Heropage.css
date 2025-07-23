@@ -231,6 +231,7 @@ body {
 
   .hero-buttons {
     justify-content: center;
+   
   }
 
   .navbar {
@@ -239,4 +240,13 @@ body {
     justify-content: space-between;
     padding: 20px 30px;
   }
+ .cta-button{
+  background-color: white ;
+  color: #FF850B;
+  border-color: #FF650B;
+
+ }.cta-button:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
 }
