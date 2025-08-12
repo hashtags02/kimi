@@ -24,7 +24,7 @@ const features = [
   }
 ];
 
-export default function WhyChooseDriveMail() {
+export default function WhyChooseNeeja() {
   return (
     <section className="why-choose">
       <h2>Why Commuters Choose <span>VoiceMail</span></h2>

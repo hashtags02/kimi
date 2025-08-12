@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./DriveMailOverview.css";
 
-export default function DriveMailOverview() {
+export default function NeejaOverview() {
   const sectionRef = useRef(null);
   const [playVideo, setPlayVideo] = useState(false);
 
@@ -37,10 +37,10 @@ export default function DriveMailOverview() {
         <p>
           Turn your commute into productive time. <br />
           <span className="orange">Activate</span> with a simple voice command: "
-          <span className="orange">Hey DriveMail</span>." <br />
+          <span className="orange">Hey Neeja</span>." <br />
           Reads, writes, and sends emails <span className="orange">hands-free</span>. <br />
           Seamlessly connects to your inbox as you drive. <br />
-          <span className="orange">Stay focused</span> on the road while DriveMail handles the rest.
+          <span className="orange">Stay focused</span> on the road while Neeja handles the rest.
         </p>
       </div>
       <div className="image-content">
@@ -53,7 +53,7 @@ export default function DriveMailOverview() {
               ? "https://www.youtube.com/embed/vx-yn2NDJ7c?autoplay=1&mute=1&loop=1&playlist=vx-yn2NDJ7c"
               : ""
           }
-          title="DriveMail Demo"
+          title="Neeja Demo"
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen

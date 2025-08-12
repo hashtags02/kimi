@@ -5,8 +5,8 @@ const steps = [
   {
     title: "Start Your Journey",
     description: [
-      "Activate Drivemail when you enter your vehicle",
-      "Voice command: ‘Hey Drivemail’",
+      "Activate Neeja when you enter your vehicle",
+      "Voice command: ‘Hey Neeja’",
       "Auto-detects if you’re driving",
       "No hardware is required"
     ],

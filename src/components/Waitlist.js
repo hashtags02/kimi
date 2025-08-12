@@ -47,7 +47,7 @@ export default function Waitlist() {
           <span className="highlight">Ready to get started?</span>
         </h1>
         <p className="subtitle">
-          Join the waitlist and be one of the first to access DriveMail.
+          Join the waitlist and be one of the first to access Neeja.
         </p>
       </div>
 
